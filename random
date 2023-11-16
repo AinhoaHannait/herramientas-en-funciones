@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int random(int tam);
+
+srand(time(NULL));
+
+int main ()
+{
+
+  int t;
+
+  printf("De que tamaño sera el arreglo?");
+  scanf("%d", t)
+  random(t);
+
+
+
+  return 0;
+}
+
+void random (int tam)
+{
+  int arr[tam];
+  int i;
+
+  for(i=0; i<tam; i++)
+  {
+    arr[i]= 1 + rand () % (10 +1 -1);
+    printf("%d ", arr[i]);
+  }
+  printf("\n");
+
+}
